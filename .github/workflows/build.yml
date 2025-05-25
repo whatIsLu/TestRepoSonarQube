@@ -22,11 +22,19 @@ jobs:
           sudo xcodebuild -license accept
 
       - name: Run Tests
-        run: xcodebuild -scheme ProjectCI -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' -resultBundlePath ./test_result -enableCodeCoverage YES -derivedDataPath . clean build test
-
-      - name: Code coverage
         run: |
-          bash xccov-to-sonarqube-generic.sh test_result.xcresult/ >coverage.xml
+          xcodebuild \
+            -scheme ClockSnd \ # <-- заміни на реальну назву схеми, якщо інша
+            -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
+            -resultBundlePath ./test_result \
+            -enableCodeCoverage YES \
+            -derivedDataPath . \
+            clean build test
+
+      - name: Generate Code Coverage Report
+        run: |
+          chmod +x xccov-to-sonarqube-generic.sh
+          ./xccov-to-sonarqube-generic.sh test_result.xcresult > coverage.xml
 
       - name: Install SonarScanner
         run: |
@@ -35,10 +43,12 @@ jobs:
       - name: SonarCloud Analysis
         run: |
           sonar-scanner \
-            -Dsonar.organization={org} \
-            -Dsonar.projectKey={project_key} \
-            -Dsonar.sources=Sources/ \
-            -Dsonar.tests=Tests/ \
+            -Dsonar.organization=whatislu \
+            -Dsonar.projectKey=whatIsLu_TestRepoSonarQube \
+            -Dsonar.projectName=TestRepoSonarQube \
+            -Dsonar.projectVersion=1.0 \
+            -Dsonar.sources=ClockSnd \       # <-- заміни на ваш каталог із кодом
+            -Dsonar.tests=ClockSndTests \    # <-- заміни на ваш каталог із тестами
             -Dsonar.language=swift \
             -Dsonar.sourceEncoding=UTF-8 \
             -Dsonar.verbose=true \
