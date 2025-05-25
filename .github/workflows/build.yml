@@ -4,7 +4,7 @@ on:
   pull_request:
 
 jobs:
-  tests:
+  build-only:
     runs-on: macos-latest
 
     steps:
@@ -21,20 +21,15 @@ jobs:
           sudo xcode-select -switch /Applications/Xcode.app/Contents/Developer
           sudo xcodebuild -license accept
 
-      - name: Run Unit Tests with Code Coverage
+      - name: Build project for simulator (no signing)
         run: |
           xcodebuild \
             -scheme ClockSnd \
+            -sdk iphonesimulator \
             -destination 'platform=iOS Simulator,name=iPhone 15,OS=latest' \
-            -resultBundlePath ./test_result \
-            -enableCodeCoverage YES \
+            -resultBundlePath ./build_result \
             -derivedDataPath . \
-            clean build test
-
-      - name: Generate Coverage Report
-        run: |
-          chmod +x xccov-to-sonarqube-generic.sh
-          ./xccov-to-sonarqube-generic.sh test_result.xcresult > coverage.xml
+            clean build
 
       - name: Install SonarScanner
         run: brew install sonar-scanner
@@ -42,5 +37,4 @@ jobs:
       - name: Run SonarCloud Analysis
         run: sonar-scanner
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

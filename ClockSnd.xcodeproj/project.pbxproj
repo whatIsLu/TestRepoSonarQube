@@ -1,0 +1,1203 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B4D31192A9A89BE0013D8B2 /* GlobalClockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D31182A9A89BE0013D8B2 /* GlobalClockManager.swift */; };
+		2B4D311B2A9A8A060013D8B2 /* ClockModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D311A2A9A8A050013D8B2 /* ClockModel.swift */; };
+		2B4D311F2A9AC2230013D8B2 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D311E2A9AC2230013D8B2 /* AboutView.swift */; };
+		2B4D31262A9B65B80013D8B2 /* ClockCreatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D31252A9B65B80013D8B2 /* ClockCreatorView.swift */; };
+		2B4D312F2A9B7AB80013D8B2 /* ClockCreatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4D312E2A9B7AB80013D8B2 /* ClockCreatorViewModel.swift */; };
+		2B576C132A9D586C00C9CCF0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B576C122A9D586C00C9CCF0 /* GoogleService-Info.plist */; };
+		7467BC1B2B13FB58001F4878 /* CoreDataClocks.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC192B13FB58001F4878 /* CoreDataClocks.xcdatamodeld */; };
+		7467BC1E2B147334001F4878 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 7467BC1D2B147334001F4878 /* Realm */; };
+		7467BC202B147334001F4878 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7467BC1F2B147334001F4878 /* RealmSwift */; };
+		7467BC232B154B6E001F4878 /* RealmData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7467BC222B154B6E001F4878 /* RealmData.swift */; };
+		747A8FFC2B710FD300580B2E /* HomeIndicatorComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A8FFB2B710FD300580B2E /* HomeIndicatorComponentView.swift */; };
+		747A8FFE2BB4A58500580B2E /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A8FFD2BB4A58500580B2E /* NavigationCoordinator.swift */; };
+		747A90012BB4A69A00580B2E /* MainFlowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A90002BB4A69A00580B2E /* MainFlowView.swift */; };
+		747A90032BB4A6D100580B2E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A90022BB4A6D100580B2E /* AppCoordinator.swift */; };
+		747A90052BB4BAF400580B2E /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A90042BB4BAF400580B2E /* DIContainer.swift */; };
+		747A90072BB4BE6D00580B2E /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A90062BB4BE6D00580B2E /* TabBarViewModel.swift */; };
+		747A90092BB4C3D300580B2E /* ClockViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A90082BB4C3D300580B2E /* ClockViewModel.swift */; };
+		747A900B2BB4D10000580B2E /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 747A900A2BB4D10000580B2E /* OnboardingViewModel.swift */; };
+		748BF4782B168B4100BD6B10 /* KeyChainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748BF4772B168B4100BD6B10 /* KeyChainData.swift */; };
+		74BF67402AA4C6B2001D4FB5 /* SndTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BF673F2AA4C6B2001D4FB5 /* SndTextField.swift */; };
+		74C4B3402BB8FA7800CF715B /* Bitter-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90422BB8F1AE00580B2E /* Bitter-ExtraLight.ttf */; };
+		74C4B3412BB8FA7800CF715B /* ZillaSlab-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90552BB8F1BE00580B2E /* ZillaSlab-SemiBoldItalic.ttf */; };
+		74C4B3422BB8FA7800CF715B /* Roboto-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90162BB8EDE300580B2E /* Roboto-Italic.ttf */; };
+		74C4B3432BB8FA7800CF715B /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A900D2BB8EDE100580B2E /* Roboto-Regular.ttf */; };
+		74C4B3442BB8FA7800CF715B /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A900E2BB8EDE100580B2E /* Roboto-ThinItalic.ttf */; };
+		74C4B3452BB8FA7800CF715B /* Jost-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BAF2A99578F00F459BE /* Jost-Thin.ttf */; };
+		74C4B3462BB8FA7800CF715B /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A900F2BB8EDE100580B2E /* Roboto-BoldItalic.ttf */; };
+		74C4B3472BB8FA7800CF715B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BAD2A99578F00F459BE /* Nunito-Black.ttf */; };
+		74C4B3482BB8FA7800CF715B /* Jost-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BCB2A99579100F459BE /* Jost-Regular.ttf */; };
+		74C4B3492BB8FA7800CF715B /* ConcertOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A906A2BB8F1EC00580B2E /* ConcertOne-Regular.ttf */; };
+		74C4B34A2BB8FA7800CF715B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB62A99579000F459BE /* Nunito-Regular.ttf */; };
+		74C4B34B2BB8FA7800CF715B /* Jost-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBA2A99579000F459BE /* Jost-Italic.ttf */; };
+		74C4B34C2BB8FA7800CF715B /* Abel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903D2BB8F1A000580B2E /* Abel-Regular.ttf */; };
+		74C4B34D2BB8FA7800CF715B /* Orbitron-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90662BB8F1DD00580B2E /* Orbitron-Bold.ttf */; };
+		74C4B34E2BB8FA7800CF715B /* ZillaSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A905A2BB8F1BF00580B2E /* ZillaSlab-Medium.ttf */; };
+		74C4B34F2BB8FA7800CF715B /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90312BB8F18800580B2E /* WorkSans-Black.ttf */; };
+		74C4B3502BB8FA7800CF715B /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90252BB8F17500580B2E /* Ubuntu-BoldItalic.ttf */; };
+		74C4B3512BB8FA7800CF715B /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90272BB8F17600580B2E /* Ubuntu-Medium.ttf */; };
+		74C4B3522BB8FA7800CF715B /* Jost-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC32A99579000F459BE /* Jost-SemiBold.ttf */; };
+		74C4B3532BB8FA7800CF715B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBB2A99579000F459BE /* Nunito-Bold.ttf */; };
+		74C4B3542BB8FA7800CF715B /* Bitter-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904C2BB8F1B000580B2E /* Bitter-Black.ttf */; };
+		74C4B3552BB8FA7800CF715B /* RubikScribble-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90182BB8F16300580B2E /* RubikScribble-Regular.ttf */; };
+		74C4B3562BB8FA7800CF715B /* EduNSWACTFoundation-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90502BB8F1B600580B2E /* EduNSWACTFoundation-Medium.ttf */; };
+		74C4B3572BB8FA7800CF715B /* EduNSWACTFoundation-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90532BB8F1B700580B2E /* EduNSWACTFoundation-Regular.ttf */; };
+		74C4B3582BB8FA7800CF715B /* Bitter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90402BB8F1AD00580B2E /* Bitter-ExtraBold.ttf */; };
+		74C4B3592BB8FA7800CF715B /* EduNSWACTFoundation-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90522BB8F1B700580B2E /* EduNSWACTFoundation-SemiBold.ttf */; };
+		74C4B35A2BB8FA7800CF715B /* Jost-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB22A99578F00F459BE /* Jost-Medium.ttf */; };
+		74C4B35B2BB8FA7800CF715B /* Jost-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BCA2A99579100F459BE /* Jost-ThinItalic.ttf */; };
+		74C4B35C2BB8FA7800CF715B /* Jost-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC12A99579000F459BE /* Jost-Black.ttf */; };
+		74C4B35D2BB8FA7800CF715B /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902E2BB8F18800580B2E /* WorkSans-Thin.ttf */; };
+		74C4B35E2BB8FA7800CF715B /* Jost-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB92A99579000F459BE /* Jost-SemiBoldItalic.ttf */; };
+		74C4B35F2BB8FA7800CF715B /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902C2BB8F18700580B2E /* WorkSans-Medium.ttf */; };
+		74C4B3602BB8FA7800CF715B /* WorkSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90372BB8F18900580B2E /* WorkSans-ExtraLightItalic.ttf */; };
+		74C4B3612BB8FA7800CF715B /* Bitter-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90442BB8F1AE00580B2E /* Bitter-BlackItalic.ttf */; };
+		74C4B3622BB8FA7800CF715B /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901B2BB8F16C00580B2E /* Merriweather-Regular.ttf */; };
+		74C4B3632BB8FA7800CF715B /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90392BB8F18A00580B2E /* WorkSans-Italic.ttf */; };
+		74C4B3642BB8FA7800CF715B /* ZillaSlab-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90572BB8F1BF00580B2E /* ZillaSlab-BoldItalic.ttf */; };
+		74C4B3652BB8FA7800CF715B /* WorkSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90292BB8F18600580B2E /* WorkSans-BlackItalic.ttf */; };
+		74C4B3662BB8FA7800CF715B /* WorkSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902D2BB8F18700580B2E /* WorkSans-SemiBoldItalic.ttf */; };
+		74C4B3672BB8FA7800CF715B /* Jost-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB32A99579000F459BE /* Jost-ExtraBoldItalic.ttf */; };
+		74C4B3682BB8FA7800CF715B /* Bitter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90482BB8F1AF00580B2E /* Bitter-Thin.ttf */; };
+		74C4B3692BB8FA7800CF715B /* Nunito-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BAB2A99578F00F459BE /* Nunito-ExtraLightItalic.ttf */; };
+		74C4B36A2BB8FA7800CF715B /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC92A99579100F459BE /* Nunito-Medium.ttf */; };
+		74C4B36B2BB8FA7800CF715B /* Nunito-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB52A99579000F459BE /* Nunito-Italic.ttf */; };
+		74C4B36C2BB8FA7800CF715B /* Nunito-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC22A99579000F459BE /* Nunito-SemiBoldItalic.ttf */; };
+		74C4B36D2BB8FA7800CF715B /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90262BB8F17600580B2E /* Ubuntu-Light.ttf */; };
+		74C4B36E2BB8FA7800CF715B /* Bitter-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904A2BB8F1AF00580B2E /* Bitter-ExtraBoldItalic.ttf */; };
+		74C4B36F2BB8FA7800CF715B /* ZillaSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90562BB8F1BE00580B2E /* ZillaSlab-SemiBold.ttf */; };
+		74C4B3712BB8FA7800CF715B /* ZillaSlab-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A905D2BB8F1C000580B2E /* ZillaSlab-Italic.ttf */; };
+		74C4B3722BB8FA7800CF715B /* Bitter-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904F2BB8F1B000580B2E /* Bitter-LightItalic.ttf */; };
+		74C4B3732BB8FA7800CF715B /* Jost-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB02A99578F00F459BE /* Jost-LightItalic.ttf */; };
+		74C4B3742BB8FA7800CF715B /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A900C2BB8EDE000580B2E /* Roboto-Black.ttf */; };
+		74C4B3752BB8FA7800CF715B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB42A99579000F459BE /* Nunito-Light.ttf */; };
+		74C4B3772BB8FA7800CF715B /* Merriweather-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90192BB8F16B00580B2E /* Merriweather-Italic.ttf */; };
+		74C4B3782BB8FA7800CF715B /* Merriweather-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90202BB8F16D00580B2E /* Merriweather-BlackItalic.ttf */; };
+		74C4B3792BB8FA7800CF715B /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90112BB8EDE200580B2E /* Roboto-LightItalic.ttf */; };
+		74C4B37A2BB8FA7800CF715B /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90592BB8F1BF00580B2E /* ZillaSlab-Light.ttf */; };
+		74C4B37B2BB8FA7800CF715B /* Merriweather-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901E2BB8F16D00580B2E /* Merriweather-BoldItalic.ttf */; };
+		74C4B37C2BB8FA7800CF715B /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90132BB8EDE200580B2E /* Roboto-Medium.ttf */; };
+		74C4B37D2BB8FA7800CF715B /* Merriweather-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901C2BB8F16C00580B2E /* Merriweather-Light.ttf */; };
+		74C4B37E2BB8FA7800CF715B /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90362BB8F18900580B2E /* WorkSans-ExtraBold.ttf */; };
+		74C4B37F2BB8FA7800CF715B /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90322BB8F18800580B2E /* WorkSans-SemiBold.ttf */; };
+		74C4B3802BB8FA7800CF715B /* Acme-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90692BB8F1E400580B2E /* Acme-Regular.ttf */; };
+		74C4B3812BB8FA7800CF715B /* Bitter-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904E2BB8F1B000580B2E /* Bitter-SemiBoldItalic.ttf */; };
+		74C4B3822BB8FA7800CF715B /* Bitter-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90492BB8F1AF00580B2E /* Bitter-MediumItalic.ttf */; };
+		74C4B3832BB8FA7800CF715B /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902A2BB8F18700580B2E /* WorkSans-LightItalic.ttf */; };
+		74C4B3842BB8FA7800CF715B /* Nunito-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBE2A99579000F459BE /* Nunito-LightItalic.ttf */; };
+		74C4B3852BB8FA7800CF715B /* ZillaSlab-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A905C2BB8F1C000580B2E /* ZillaSlab-MediumItalic.ttf */; };
+		74C4B3862BB8FA7800CF715B /* Orbitron-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90642BB8F1DD00580B2E /* Orbitron-Regular.ttf */; };
+		74C4B3872BB8FA7800CF715B /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90152BB8EDE200580B2E /* Roboto-MediumItalic.ttf */; };
+		74C4B3882BB8FA7800CF715B /* Bitter-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904D2BB8F1B000580B2E /* Bitter-ExtraLightItalic.ttf */; };
+		74C4B3892BB8FA7800CF715B /* ZillaSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90582BB8F1BF00580B2E /* ZillaSlab-Bold.ttf */; };
+		74C4B38A2BB8FA7800CF715B /* Bitter-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A904B2BB8F1B000580B2E /* Bitter-Italic.ttf */; };
+		74C4B38B2BB8FA7800CF715B /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90282BB8F17600580B2E /* Ubuntu-MediumItalic.ttf */; };
+		74C4B38C2BB8FA7800CF715B /* Workbench-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903B2BB8F19200580B2E /* Workbench-Regular.ttf */; };
+		74C4B38D2BB8FA7800CF715B /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90382BB8F18A00580B2E /* WorkSans-Bold.ttf */; };
+		74C4B38E2BB8FA7800CF715B /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90172BB8EDE300580B2E /* Roboto-BlackItalic.ttf */; };
+		74C4B38F2BB8FA7800CF715B /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90142BB8EDE200580B2E /* Roboto-Thin.ttf */; };
+		74C4B3902BB8FA7800CF715B /* Bitter-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903F2BB8F1AD00580B2E /* Bitter-ThinItalic.ttf */; };
+		74C4B3912BB8FA7800CF715B /* Bitter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90472BB8F1AF00580B2E /* Bitter-Medium.ttf */; };
+		74C4B3922BB8FA7800CF715B /* Bitter-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903E2BB8F1AC00580B2E /* Bitter-Light.ttf */; };
+		74C4B3932BB8FA7800CF715B /* Bitter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90452BB8F1AE00580B2E /* Bitter-Bold.ttf */; };
+		74C4B3942BB8FA7800CF715B /* Merriweather-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901A2BB8F16C00580B2E /* Merriweather-Black.ttf */; };
+		74C4B3952BB8FA7800CF715B /* Bitter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90462BB8F1AF00580B2E /* Bitter-Regular.ttf */; };
+		74C4B3962BB8FA7800CF715B /* Nunito-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BCC2A99579100F459BE /* Nunito-ExtraLight.ttf */; };
+		74C4B3972BB8FA7800CF715B /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902F2BB8F18800580B2E /* WorkSans-ExtraBoldItalic.ttf */; };
+		74C4B3982BB8FA7800CF715B /* Merriweather-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901F2BB8F16D00580B2E /* Merriweather-Bold.ttf */; };
+		74C4B3992BB8FA7800CF715B /* Jost-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC62A99579000F459BE /* Jost-ExtraBold.ttf */; };
+		74C4B39A2BB8FA7800CF715B /* BebasNeue-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903C2BB8F19A00580B2E /* BebasNeue-Regular.ttf */; };
+		74C4B39B2BB8FA7800CF715B /* ZillaSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90542BB8F1BE00580B2E /* ZillaSlab-Regular.ttf */; };
+		74C4B39D2BB8FA7800CF715B /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90222BB8F17500580B2E /* Ubuntu-LightItalic.ttf */; };
+		74C4B39E2BB8FA7800CF715B /* Jost-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB12A99578F00F459BE /* Jost-Light.ttf */; };
+		74C4B39F2BB8FA7800CF715B /* Nunito-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBD2A99579000F459BE /* Nunito-BlackItalic.ttf */; };
+		74C4B3A02BB8FA7800CF715B /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90342BB8F18900580B2E /* WorkSans-Light.ttf */; };
+		74C4B3A12BB8FA7800CF715B /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90102BB8EDE100580B2E /* Roboto-Bold.ttf */; };
+		74C4B3A22BB8FA7800CF715B /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90352BB8F18900580B2E /* WorkSans-ExtraLight.ttf */; };
+		74C4B3A32BB8FA7800CF715B /* EduNSWACTFoundation-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90512BB8F1B700580B2E /* EduNSWACTFoundation-Bold.ttf */; };
+		74C4B3A42BB8FA7800CF715B /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90242BB8F17500580B2E /* Ubuntu-Italic.ttf */; };
+		74C4B3A52BB8FA7800CF715B /* WorkSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90332BB8F18900580B2E /* WorkSans-ThinItalic.ttf */; };
+		74C4B3A62BB8FA7800CF715B /* Orbitron-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90632BB8F1DC00580B2E /* Orbitron-ExtraBold.ttf */; };
+		74C4B3A72BB8FA7800CF715B /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A903A2BB8F18A00580B2E /* WorkSans-Regular.ttf */; };
+		74C4B3A82BB8FA7800CF715B /* WorkSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A902B2BB8F18700580B2E /* WorkSans-MediumItalic.ttf */; };
+		74C4B3A92BB8FA7800CF715B /* Jost-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBC2A99579000F459BE /* Jost-MediumItalic.ttf */; };
+		74C4B3AA2BB8FA7800CF715B /* Bitter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90412BB8F1AE00580B2E /* Bitter-SemiBold.ttf */; };
+		74C4B3AB2BB8FA7800CF715B /* Jost-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB82A99579000F459BE /* Jost-BlackItalic.ttf */; };
+		74C4B3AC2BB8FA7800CF715B /* Bitter-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90432BB8F1AE00580B2E /* Bitter-BoldItalic.ttf */; };
+		74C4B3AD2BB8FA7800CF715B /* Jost-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC72A99579100F459BE /* Jost-ExtraLight.ttf */; };
+		74C4B3AE2BB8FA7800CF715B /* Jost-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC82A99579100F459BE /* Jost-BoldItalic.ttf */; };
+		74C4B3AF2BB8FA7800CF715B /* WorkSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90302BB8F18800580B2E /* WorkSans-BoldItalic.ttf */; };
+		74C4B3B02BB8FA7800CF715B /* Orbitron-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90682BB8F1DE00580B2E /* Orbitron-SemiBold.ttf */; };
+		74C4B3B12BB8FA7800CF715B /* AbrilFatface-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90622BB8F1D400580B2E /* AbrilFatface-Regular.ttf */; };
+		74C4B3B22BB8FA7800CF715B /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90122BB8EDE200580B2E /* Roboto-Light.ttf */; };
+		74C4B3B32BB8FA7800CF715B /* Orbitron-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90672BB8F1DE00580B2E /* Orbitron-Black.ttf */; };
+		74C4B3B42BB8FA7800CF715B /* Nunito-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BAE2A99578F00F459BE /* Nunito-ExtraBoldItalic.ttf */; };
+		74C4B3B52BB8FA7800CF715B /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90212BB8F17400580B2E /* Ubuntu-Regular.ttf */; };
+		74C4B3B62BB8FA7800CF715B /* Orbitron-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90652BB8F1DD00580B2E /* Orbitron-Medium.ttf */; };
+		74C4B3B82BB8FA7800CF715B /* ZillaSlab-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A905B2BB8F1BF00580B2E /* ZillaSlab-LightItalic.ttf */; };
+		74C4B3B92BB8FA7800CF715B /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A90232BB8F17500580B2E /* Ubuntu-Bold.ttf */; };
+		74C4B3BA2BB8FA7800CF715B /* Merriweather-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 747A901D2BB8F16C00580B2E /* Merriweather-LightItalic.ttf */; };
+		74C4B3BB2BB8FA7800CF715B /* Jost-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC52A99579000F459BE /* Jost-Bold.ttf */; };
+		74C4B3BC2BB8FA7800CF715B /* Jost-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BB72A99579000F459BE /* Jost-ExtraLightItalic.ttf */; };
+		74C4B3BD2BB8FA7800CF715B /* Nunito-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BBF2A99579000F459BE /* Nunito-BoldItalic.ttf */; };
+		74C4B3BE2BB8FA7800CF715B /* Nunito-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC42A99579000F459BE /* Nunito-ExtraBold.ttf */; };
+		74C4B3BF2BB8FA7800CF715B /* Nunito-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BAC2A99578F00F459BE /* Nunito-MediumItalic.ttf */; };
+		74C4B3C02BB8FA7800CF715B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5BC02A99579000F459BE /* Nunito-SemiBold.ttf */; };
+		74C4B3C32BB9185F00CF715B /* AccelerometerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3C22BB9185F00CF715B /* AccelerometerManager.swift */; };
+		74C4B3C72BB9465800CF715B /* AboutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3C62BB9465800CF715B /* AboutViewModel.swift */; };
+		74C4B3C92BB94B4800CF715B /* AppSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3C82BB94B4800CF715B /* AppSettingsView.swift */; };
+		74C4B3CC2BB94B5900CF715B /* AppSettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3CB2BB94B5900CF715B /* AppSettingsViewModel.swift */; };
+		74C4B3D12BB952A700CF715B /* DisableModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3D02BB952A700CF715B /* DisableModifier.swift */; };
+		74C4B3D32BB953EC00CF715B /* SndCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3D22BB953EC00CF715B /* SndCheckBox.swift */; };
+		74C4B3D52BB958DF00CF715B /* SndComboBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3D42BB958DF00CF715B /* SndComboBoxView.swift */; };
+		74C4B3D72BB961CF00CF715B /* SndComboBoxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3D62BB961CF00CF715B /* SndComboBoxViewModel.swift */; };
+		74C4B3D92BB97CEF00CF715B /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3D82BB97CEF00CF715B /* UserDefaults.swift */; };
+		74C4B3DB2BB9837F00CF715B /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74C4B3DA2BB9837F00CF715B /* ThemeManager.swift */; };
+		74C4B3DD2BBAB80D00CF715B /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 74C4B3DC2BBAB80D00CF715B /* PrivacyInfo.xcprivacy */; };
+		74FF5B862A9952B800F459BE /* ClockSndApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5B852A9952B800F459BE /* ClockSndApp.swift */; };
+		74FF5B8A2A9952B900F459BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5B892A9952B900F459BE /* Assets.xcassets */; };
+		74FF5B8E2A9952B900F459BE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74FF5B8D2A9952B900F459BE /* Preview Assets.xcassets */; };
+		74FF5B992A9953B700F459BE /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5B982A9953B700F459BE /* TabBarView.swift */; };
+		74FF5B9B2A99543900F459BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5B9A2A99543900F459BE /* HomeView.swift */; };
+		74FF5B9F2A99550F00F459BE /* SndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5B9E2A99550F00F459BE /* SndText.swift */; };
+		74FF5BA22A99557000F459BE /* Font+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BA12A99557000F459BE /* Font+Extensions.swift */; };
+		74FF5BA42A99559E00F459BE /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BA32A99559E00F459BE /* Color+Extensions.swift */; };
+		74FF5BF12A99580500F459BE /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BF02A99580500F459BE /* OnboardingView.swift */; };
+		74FF5BF72A99586E00F459BE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BF62A99586E00F459BE /* MainView.swift */; };
+		74FF5BF92A99639700F459BE /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BF82A99639700F459BE /* StoreView.swift */; };
+		74FF5BFB2A9963AD00F459BE /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BFA2A9963AD00F459BE /* SettingsView.swift */; };
+		74FF5BFD2A9963BB00F459BE /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74FF5BFC2A9963BB00F459BE /* ClockView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2B4D31182A9A89BE0013D8B2 /* GlobalClockManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalClockManager.swift; sourceTree = "<group>"; };
+		2B4D311A2A9A8A050013D8B2 /* ClockModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockModel.swift; sourceTree = "<group>"; };
+		2B4D311E2A9AC2230013D8B2 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		2B4D31252A9B65B80013D8B2 /* ClockCreatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockCreatorView.swift; sourceTree = "<group>"; };
+		2B4D312E2A9B7AB80013D8B2 /* ClockCreatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockCreatorViewModel.swift; sourceTree = "<group>"; };
+		2B576C122A9D586C00C9CCF0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		7467BC1A2B13FB58001F4878 /* CoreDataClocks.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataClocks.xcdatamodel; sourceTree = "<group>"; };
+		7467BC222B154B6E001F4878 /* RealmData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmData.swift; sourceTree = "<group>"; };
+		747A8FFB2B710FD300580B2E /* HomeIndicatorComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeIndicatorComponentView.swift; sourceTree = "<group>"; };
+		747A8FFD2BB4A58500580B2E /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		747A90002BB4A69A00580B2E /* MainFlowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlowView.swift; sourceTree = "<group>"; };
+		747A90022BB4A6D100580B2E /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		747A90042BB4BAF400580B2E /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		747A90062BB4BE6D00580B2E /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
+		747A90082BB4C3D300580B2E /* ClockViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewModel.swift; sourceTree = "<group>"; };
+		747A900A2BB4D10000580B2E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		747A900C2BB8EDE000580B2E /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		747A900D2BB8EDE100580B2E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		747A900E2BB8EDE100580B2E /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		747A900F2BB8EDE100580B2E /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90102BB8EDE100580B2E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		747A90112BB8EDE200580B2E /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A90122BB8EDE200580B2E /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		747A90132BB8EDE200580B2E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		747A90142BB8EDE200580B2E /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		747A90152BB8EDE200580B2E /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		747A90162BB8EDE300580B2E /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		747A90172BB8EDE300580B2E /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		747A90182BB8F16300580B2E /* RubikScribble-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RubikScribble-Regular.ttf"; sourceTree = "<group>"; };
+		747A90192BB8F16B00580B2E /* Merriweather-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Italic.ttf"; sourceTree = "<group>"; };
+		747A901A2BB8F16C00580B2E /* Merriweather-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Black.ttf"; sourceTree = "<group>"; };
+		747A901B2BB8F16C00580B2E /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		747A901C2BB8F16C00580B2E /* Merriweather-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Light.ttf"; sourceTree = "<group>"; };
+		747A901D2BB8F16C00580B2E /* Merriweather-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A901E2BB8F16D00580B2E /* Merriweather-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A901F2BB8F16D00580B2E /* Merriweather-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Bold.ttf"; sourceTree = "<group>"; };
+		747A90202BB8F16D00580B2E /* Merriweather-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-BlackItalic.ttf"; sourceTree = "<group>"; };
+		747A90212BB8F17400580B2E /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		747A90222BB8F17500580B2E /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A90232BB8F17500580B2E /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		747A90242BB8F17500580B2E /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		747A90252BB8F17500580B2E /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90262BB8F17600580B2E /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		747A90272BB8F17600580B2E /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		747A90282BB8F17600580B2E /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		747A90292BB8F18600580B2E /* WorkSans-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		747A902A2BB8F18700580B2E /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A902B2BB8F18700580B2E /* WorkSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		747A902C2BB8F18700580B2E /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Medium.ttf"; sourceTree = "<group>"; };
+		747A902D2BB8F18700580B2E /* WorkSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		747A902E2BB8F18800580B2E /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		747A902F2BB8F18800580B2E /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90302BB8F18800580B2E /* WorkSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90312BB8F18800580B2E /* WorkSans-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		747A90322BB8F18800580B2E /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		747A90332BB8F18900580B2E /* WorkSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		747A90342BB8F18900580B2E /* WorkSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Light.ttf"; sourceTree = "<group>"; };
+		747A90352BB8F18900580B2E /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
+		747A90362BB8F18900580B2E /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		747A90372BB8F18900580B2E /* WorkSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		747A90382BB8F18A00580B2E /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		747A90392BB8F18A00580B2E /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Italic.ttf"; sourceTree = "<group>"; };
+		747A903A2BB8F18A00580B2E /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		747A903B2BB8F19200580B2E /* Workbench-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Workbench-Regular.ttf"; sourceTree = "<group>"; };
+		747A903C2BB8F19A00580B2E /* BebasNeue-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.ttf"; sourceTree = "<group>"; };
+		747A903D2BB8F1A000580B2E /* Abel-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abel-Regular.ttf"; sourceTree = "<group>"; };
+		747A903E2BB8F1AC00580B2E /* Bitter-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Light.ttf"; sourceTree = "<group>"; };
+		747A903F2BB8F1AD00580B2E /* Bitter-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-ThinItalic.ttf"; sourceTree = "<group>"; };
+		747A90402BB8F1AD00580B2E /* Bitter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		747A90412BB8F1AE00580B2E /* Bitter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-SemiBold.ttf"; sourceTree = "<group>"; };
+		747A90422BB8F1AE00580B2E /* Bitter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-ExtraLight.ttf"; sourceTree = "<group>"; };
+		747A90432BB8F1AE00580B2E /* Bitter-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90442BB8F1AE00580B2E /* Bitter-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-BlackItalic.ttf"; sourceTree = "<group>"; };
+		747A90452BB8F1AE00580B2E /* Bitter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Bold.ttf"; sourceTree = "<group>"; };
+		747A90462BB8F1AF00580B2E /* Bitter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Regular.ttf"; sourceTree = "<group>"; };
+		747A90472BB8F1AF00580B2E /* Bitter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Medium.ttf"; sourceTree = "<group>"; };
+		747A90482BB8F1AF00580B2E /* Bitter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Thin.ttf"; sourceTree = "<group>"; };
+		747A90492BB8F1AF00580B2E /* Bitter-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-MediumItalic.ttf"; sourceTree = "<group>"; };
+		747A904A2BB8F1AF00580B2E /* Bitter-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		747A904B2BB8F1B000580B2E /* Bitter-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Italic.ttf"; sourceTree = "<group>"; };
+		747A904C2BB8F1B000580B2E /* Bitter-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-Black.ttf"; sourceTree = "<group>"; };
+		747A904D2BB8F1B000580B2E /* Bitter-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		747A904E2BB8F1B000580B2E /* Bitter-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		747A904F2BB8F1B000580B2E /* Bitter-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bitter-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A90502BB8F1B600580B2E /* EduNSWACTFoundation-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EduNSWACTFoundation-Medium.ttf"; sourceTree = "<group>"; };
+		747A90512BB8F1B700580B2E /* EduNSWACTFoundation-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EduNSWACTFoundation-Bold.ttf"; sourceTree = "<group>"; };
+		747A90522BB8F1B700580B2E /* EduNSWACTFoundation-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EduNSWACTFoundation-SemiBold.ttf"; sourceTree = "<group>"; };
+		747A90532BB8F1B700580B2E /* EduNSWACTFoundation-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "EduNSWACTFoundation-Regular.ttf"; sourceTree = "<group>"; };
+		747A90542BB8F1BE00580B2E /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
+		747A90552BB8F1BE00580B2E /* ZillaSlab-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90562BB8F1BE00580B2E /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		747A90572BB8F1BF00580B2E /* ZillaSlab-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-BoldItalic.ttf"; sourceTree = "<group>"; };
+		747A90582BB8F1BF00580B2E /* ZillaSlab-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Bold.ttf"; sourceTree = "<group>"; };
+		747A90592BB8F1BF00580B2E /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
+		747A905A2BB8F1BF00580B2E /* ZillaSlab-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Medium.ttf"; sourceTree = "<group>"; };
+		747A905B2BB8F1BF00580B2E /* ZillaSlab-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-LightItalic.ttf"; sourceTree = "<group>"; };
+		747A905C2BB8F1C000580B2E /* ZillaSlab-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-MediumItalic.ttf"; sourceTree = "<group>"; };
+		747A905D2BB8F1C000580B2E /* ZillaSlab-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-Italic.ttf"; sourceTree = "<group>"; };
+		747A90622BB8F1D400580B2E /* AbrilFatface-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AbrilFatface-Regular.ttf"; sourceTree = "<group>"; };
+		747A90632BB8F1DC00580B2E /* Orbitron-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-ExtraBold.ttf"; sourceTree = "<group>"; };
+		747A90642BB8F1DD00580B2E /* Orbitron-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Regular.ttf"; sourceTree = "<group>"; };
+		747A90652BB8F1DD00580B2E /* Orbitron-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Medium.ttf"; sourceTree = "<group>"; };
+		747A90662BB8F1DD00580B2E /* Orbitron-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Bold.ttf"; sourceTree = "<group>"; };
+		747A90672BB8F1DE00580B2E /* Orbitron-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-Black.ttf"; sourceTree = "<group>"; };
+		747A90682BB8F1DE00580B2E /* Orbitron-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Orbitron-SemiBold.ttf"; sourceTree = "<group>"; };
+		747A90692BB8F1E400580B2E /* Acme-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Acme-Regular.ttf"; sourceTree = "<group>"; };
+		747A906A2BB8F1EC00580B2E /* ConcertOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ConcertOne-Regular.ttf"; sourceTree = "<group>"; };
+		748BF4772B168B4100BD6B10 /* KeyChainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainData.swift; sourceTree = "<group>"; };
+		74BF673F2AA4C6B2001D4FB5 /* SndTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SndTextField.swift; sourceTree = "<group>"; };
+		74C4B3C22BB9185F00CF715B /* AccelerometerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerometerManager.swift; sourceTree = "<group>"; };
+		74C4B3C62BB9465800CF715B /* AboutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewModel.swift; sourceTree = "<group>"; };
+		74C4B3C82BB94B4800CF715B /* AppSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsView.swift; sourceTree = "<group>"; };
+		74C4B3CB2BB94B5900CF715B /* AppSettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettingsViewModel.swift; sourceTree = "<group>"; };
+		74C4B3D02BB952A700CF715B /* DisableModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisableModifier.swift; sourceTree = "<group>"; };
+		74C4B3D22BB953EC00CF715B /* SndCheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SndCheckBox.swift; sourceTree = "<group>"; };
+		74C4B3D42BB958DF00CF715B /* SndComboBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SndComboBoxView.swift; sourceTree = "<group>"; };
+		74C4B3D62BB961CF00CF715B /* SndComboBoxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SndComboBoxViewModel.swift; sourceTree = "<group>"; };
+		74C4B3D82BB97CEF00CF715B /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		74C4B3DA2BB9837F00CF715B /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		74C4B3DC2BBAB80D00CF715B /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		74FF5B822A9952B800F459BE /* ClockSnd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClockSnd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		74FF5B852A9952B800F459BE /* ClockSndApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockSndApp.swift; sourceTree = "<group>"; };
+		74FF5B892A9952B900F459BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		74FF5B8B2A9952B900F459BE /* ClockSnd.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ClockSnd.entitlements; sourceTree = "<group>"; };
+		74FF5B8D2A9952B900F459BE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		74FF5B982A9953B700F459BE /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		74FF5B9A2A99543900F459BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		74FF5B9E2A99550F00F459BE /* SndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SndText.swift; sourceTree = "<group>"; };
+		74FF5BA12A99557000F459BE /* Font+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extensions.swift"; sourceTree = "<group>"; };
+		74FF5BA32A99559E00F459BE /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		74FF5BA52A9955F500F459BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		74FF5BAB2A99578F00F459BE /* Nunito-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BAC2A99578F00F459BE /* Nunito-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-MediumItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BAD2A99578F00F459BE /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		74FF5BAE2A99578F00F459BE /* Nunito-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BAF2A99578F00F459BE /* Jost-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Thin.ttf"; sourceTree = "<group>"; };
+		74FF5BB02A99578F00F459BE /* Jost-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-LightItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BB12A99578F00F459BE /* Jost-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Light.ttf"; sourceTree = "<group>"; };
+		74FF5BB22A99578F00F459BE /* Jost-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Medium.ttf"; sourceTree = "<group>"; };
+		74FF5BB32A99579000F459BE /* Jost-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BB42A99579000F459BE /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		74FF5BB52A99579000F459BE /* Nunito-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Italic.ttf"; sourceTree = "<group>"; };
+		74FF5BB62A99579000F459BE /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		74FF5BB72A99579000F459BE /* Jost-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BB82A99579000F459BE /* Jost-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BlackItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BB92A99579000F459BE /* Jost-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BBA2A99579000F459BE /* Jost-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Italic.ttf"; sourceTree = "<group>"; };
+		74FF5BBB2A99579000F459BE /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		74FF5BBC2A99579000F459BE /* Jost-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-MediumItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BBD2A99579000F459BE /* Nunito-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BlackItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BBE2A99579000F459BE /* Nunito-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-LightItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BBF2A99579000F459BE /* Nunito-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-BoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BC02A99579000F459BE /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		74FF5BC12A99579000F459BE /* Jost-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Black.ttf"; sourceTree = "<group>"; };
+		74FF5BC22A99579000F459BE /* Nunito-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BC32A99579000F459BE /* Jost-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-SemiBold.ttf"; sourceTree = "<group>"; };
+		74FF5BC42A99579000F459BE /* Nunito-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraBold.ttf"; sourceTree = "<group>"; };
+		74FF5BC52A99579000F459BE /* Jost-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Bold.ttf"; sourceTree = "<group>"; };
+		74FF5BC62A99579000F459BE /* Jost-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraBold.ttf"; sourceTree = "<group>"; };
+		74FF5BC72A99579100F459BE /* Jost-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ExtraLight.ttf"; sourceTree = "<group>"; };
+		74FF5BC82A99579100F459BE /* Jost-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-BoldItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BC92A99579100F459BE /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		74FF5BCA2A99579100F459BE /* Jost-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-ThinItalic.ttf"; sourceTree = "<group>"; };
+		74FF5BCB2A99579100F459BE /* Jost-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Jost-Regular.ttf"; sourceTree = "<group>"; };
+		74FF5BCC2A99579100F459BE /* Nunito-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-ExtraLight.ttf"; sourceTree = "<group>"; };
+		74FF5BF02A99580500F459BE /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		74FF5BF62A99586E00F459BE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		74FF5BF82A99639700F459BE /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		74FF5BFA2A9963AD00F459BE /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		74FF5BFC2A9963BB00F459BE /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		74FF5B7F2A9952B800F459BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7467BC202B147334001F4878 /* RealmSwift in Frameworks */,
+				7467BC1E2B147334001F4878 /* Realm in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B4D31242A9B658C0013D8B2 /* ClockCreatorScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2B4D31252A9B65B80013D8B2 /* ClockCreatorView.swift */,
+				2B4D312E2A9B7AB80013D8B2 /* ClockCreatorViewModel.swift */,
+			);
+			path = ClockCreatorScreen;
+			sourceTree = "<group>";
+		};
+		7467BC212B154B4C001F4878 /* Persistance */ = {
+			isa = PBXGroup;
+			children = (
+				7467BC222B154B6E001F4878 /* RealmData.swift */,
+				748BF4772B168B4100BD6B10 /* KeyChainData.swift */,
+				74C4B3D82BB97CEF00CF715B /* UserDefaults.swift */,
+			);
+			path = Persistance;
+			sourceTree = "<group>";
+		};
+		747A8FFF2BB4A59000580B2E /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				747A8FFD2BB4A58500580B2E /* NavigationCoordinator.swift */,
+				747A90002BB4A69A00580B2E /* MainFlowView.swift */,
+				747A90022BB4A6D100580B2E /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		74C4B3C12BB9183900CF715B /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3C22BB9185F00CF715B /* AccelerometerManager.swift */,
+			);
+			path = Accelerometer;
+			sourceTree = "<group>";
+		};
+		74C4B3C42BB9463700CF715B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3D42BB958DF00CF715B /* SndComboBoxView.swift */,
+				74FF5BFA2A9963AD00F459BE /* SettingsView.swift */,
+				2B4D311E2A9AC2230013D8B2 /* AboutView.swift */,
+				74C4B3C82BB94B4800CF715B /* AppSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		74C4B3C52BB9464000CF715B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3C62BB9465800CF715B /* AboutViewModel.swift */,
+				74C4B3CB2BB94B5900CF715B /* AppSettingsViewModel.swift */,
+				74C4B3D62BB961CF00CF715B /* SndComboBoxViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		74C4B3CF2BB9528F00CF715B /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3D02BB952A700CF715B /* DisableModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		74FF5B792A9952B800F459BE = {
+			isa = PBXGroup;
+			children = (
+				74C4B3DC2BBAB80D00CF715B /* PrivacyInfo.xcprivacy */,
+				74FF5B842A9952B800F459BE /* ClockSnd */,
+				74FF5B832A9952B800F459BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		74FF5B832A9952B800F459BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5B822A9952B800F459BE /* ClockSnd.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		74FF5B842A9952B800F459BE /* ClockSnd */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3C12BB9183900CF715B /* Accelerometer */,
+				747A8FFF2BB4A59000580B2E /* Coordinator */,
+				7467BC212B154B4C001F4878 /* Persistance */,
+				74FF5BA52A9955F500F459BE /* Info.plist */,
+				74FF5B972A99537F00F459BE /* Components */,
+				74FF5B962A99535000F459BE /* SettingsScreen */,
+				74FF5B952A99533B00F459BE /* StoreScreen */,
+				2B4D31242A9B658C0013D8B2 /* ClockCreatorScreen */,
+				74FF5B942A99532900F459BE /* HomeScreen */,
+				74FF5BF22A99581F00F459BE /* ClockScreen */,
+				74FF5BEF2A9957E900F459BE /* Onboarding */,
+				74FF5BF32A99583C00F459BE /* MainScreen */,
+				74FF5B892A9952B900F459BE /* Assets.xcassets */,
+				2B576C122A9D586C00C9CCF0 /* GoogleService-Info.plist */,
+				74FF5B852A9952B800F459BE /* ClockSndApp.swift */,
+				74FF5B8B2A9952B900F459BE /* ClockSnd.entitlements */,
+				74FF5B8C2A9952B900F459BE /* Preview Content */,
+				7467BC192B13FB58001F4878 /* CoreDataClocks.xcdatamodeld */,
+			);
+			path = ClockSnd;
+			sourceTree = "<group>";
+		};
+		74FF5B8C2A9952B900F459BE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5B8D2A9952B900F459BE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		74FF5B942A99532900F459BE /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5B9A2A99543900F459BE /* HomeView.swift */,
+				2B4D31182A9A89BE0013D8B2 /* GlobalClockManager.swift */,
+			);
+			path = HomeScreen;
+			sourceTree = "<group>";
+		};
+		74FF5B952A99533B00F459BE /* StoreScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5BF82A99639700F459BE /* StoreView.swift */,
+			);
+			path = StoreScreen;
+			sourceTree = "<group>";
+		};
+		74FF5B962A99535000F459BE /* SettingsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3C52BB9464000CF715B /* ViewModels */,
+				74C4B3C42BB9463700CF715B /* Views */,
+			);
+			path = SettingsScreen;
+			sourceTree = "<group>";
+		};
+		74FF5B972A99537F00F459BE /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				74C4B3CF2BB9528F00CF715B /* Modifiers */,
+				74FF5BAA2A99577F00F459BE /* Fonts */,
+				74FF5BA02A99553D00F459BE /* Extensions */,
+				74FF5B9E2A99550F00F459BE /* SndText.swift */,
+				74BF673F2AA4C6B2001D4FB5 /* SndTextField.swift */,
+				747A8FFB2B710FD300580B2E /* HomeIndicatorComponentView.swift */,
+				74C4B3D22BB953EC00CF715B /* SndCheckBox.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		74FF5BA02A99553D00F459BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5BA12A99557000F459BE /* Font+Extensions.swift */,
+				74FF5BA32A99559E00F459BE /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		74FF5BAA2A99577F00F459BE /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				747A906A2BB8F1EC00580B2E /* ConcertOne-Regular.ttf */,
+				747A90692BB8F1E400580B2E /* Acme-Regular.ttf */,
+				747A90672BB8F1DE00580B2E /* Orbitron-Black.ttf */,
+				747A90662BB8F1DD00580B2E /* Orbitron-Bold.ttf */,
+				747A90632BB8F1DC00580B2E /* Orbitron-ExtraBold.ttf */,
+				747A90652BB8F1DD00580B2E /* Orbitron-Medium.ttf */,
+				747A90642BB8F1DD00580B2E /* Orbitron-Regular.ttf */,
+				747A90682BB8F1DE00580B2E /* Orbitron-SemiBold.ttf */,
+				747A90622BB8F1D400580B2E /* AbrilFatface-Regular.ttf */,
+				747A90582BB8F1BF00580B2E /* ZillaSlab-Bold.ttf */,
+				747A90572BB8F1BF00580B2E /* ZillaSlab-BoldItalic.ttf */,
+				747A905D2BB8F1C000580B2E /* ZillaSlab-Italic.ttf */,
+				747A90592BB8F1BF00580B2E /* ZillaSlab-Light.ttf */,
+				747A905B2BB8F1BF00580B2E /* ZillaSlab-LightItalic.ttf */,
+				747A905A2BB8F1BF00580B2E /* ZillaSlab-Medium.ttf */,
+				747A905C2BB8F1C000580B2E /* ZillaSlab-MediumItalic.ttf */,
+				747A90542BB8F1BE00580B2E /* ZillaSlab-Regular.ttf */,
+				747A90562BB8F1BE00580B2E /* ZillaSlab-SemiBold.ttf */,
+				747A90552BB8F1BE00580B2E /* ZillaSlab-SemiBoldItalic.ttf */,
+				747A90512BB8F1B700580B2E /* EduNSWACTFoundation-Bold.ttf */,
+				747A90502BB8F1B600580B2E /* EduNSWACTFoundation-Medium.ttf */,
+				747A90532BB8F1B700580B2E /* EduNSWACTFoundation-Regular.ttf */,
+				747A90522BB8F1B700580B2E /* EduNSWACTFoundation-SemiBold.ttf */,
+				747A904C2BB8F1B000580B2E /* Bitter-Black.ttf */,
+				747A90442BB8F1AE00580B2E /* Bitter-BlackItalic.ttf */,
+				747A90452BB8F1AE00580B2E /* Bitter-Bold.ttf */,
+				747A90432BB8F1AE00580B2E /* Bitter-BoldItalic.ttf */,
+				747A90402BB8F1AD00580B2E /* Bitter-ExtraBold.ttf */,
+				747A904A2BB8F1AF00580B2E /* Bitter-ExtraBoldItalic.ttf */,
+				747A90422BB8F1AE00580B2E /* Bitter-ExtraLight.ttf */,
+				747A904D2BB8F1B000580B2E /* Bitter-ExtraLightItalic.ttf */,
+				747A904B2BB8F1B000580B2E /* Bitter-Italic.ttf */,
+				747A903E2BB8F1AC00580B2E /* Bitter-Light.ttf */,
+				747A904F2BB8F1B000580B2E /* Bitter-LightItalic.ttf */,
+				747A90472BB8F1AF00580B2E /* Bitter-Medium.ttf */,
+				747A90492BB8F1AF00580B2E /* Bitter-MediumItalic.ttf */,
+				747A90462BB8F1AF00580B2E /* Bitter-Regular.ttf */,
+				747A90412BB8F1AE00580B2E /* Bitter-SemiBold.ttf */,
+				747A904E2BB8F1B000580B2E /* Bitter-SemiBoldItalic.ttf */,
+				747A90482BB8F1AF00580B2E /* Bitter-Thin.ttf */,
+				747A903F2BB8F1AD00580B2E /* Bitter-ThinItalic.ttf */,
+				747A903D2BB8F1A000580B2E /* Abel-Regular.ttf */,
+				747A903C2BB8F19A00580B2E /* BebasNeue-Regular.ttf */,
+				747A903B2BB8F19200580B2E /* Workbench-Regular.ttf */,
+				747A90312BB8F18800580B2E /* WorkSans-Black.ttf */,
+				747A90292BB8F18600580B2E /* WorkSans-BlackItalic.ttf */,
+				747A90382BB8F18A00580B2E /* WorkSans-Bold.ttf */,
+				747A90302BB8F18800580B2E /* WorkSans-BoldItalic.ttf */,
+				747A90362BB8F18900580B2E /* WorkSans-ExtraBold.ttf */,
+				747A902F2BB8F18800580B2E /* WorkSans-ExtraBoldItalic.ttf */,
+				747A90352BB8F18900580B2E /* WorkSans-ExtraLight.ttf */,
+				747A90372BB8F18900580B2E /* WorkSans-ExtraLightItalic.ttf */,
+				747A90392BB8F18A00580B2E /* WorkSans-Italic.ttf */,
+				747A90342BB8F18900580B2E /* WorkSans-Light.ttf */,
+				747A902A2BB8F18700580B2E /* WorkSans-LightItalic.ttf */,
+				747A902C2BB8F18700580B2E /* WorkSans-Medium.ttf */,
+				747A902B2BB8F18700580B2E /* WorkSans-MediumItalic.ttf */,
+				747A903A2BB8F18A00580B2E /* WorkSans-Regular.ttf */,
+				747A90322BB8F18800580B2E /* WorkSans-SemiBold.ttf */,
+				747A902D2BB8F18700580B2E /* WorkSans-SemiBoldItalic.ttf */,
+				747A902E2BB8F18800580B2E /* WorkSans-Thin.ttf */,
+				747A90332BB8F18900580B2E /* WorkSans-ThinItalic.ttf */,
+				747A90232BB8F17500580B2E /* Ubuntu-Bold.ttf */,
+				747A90252BB8F17500580B2E /* Ubuntu-BoldItalic.ttf */,
+				747A90242BB8F17500580B2E /* Ubuntu-Italic.ttf */,
+				747A90262BB8F17600580B2E /* Ubuntu-Light.ttf */,
+				747A90222BB8F17500580B2E /* Ubuntu-LightItalic.ttf */,
+				747A90272BB8F17600580B2E /* Ubuntu-Medium.ttf */,
+				747A90282BB8F17600580B2E /* Ubuntu-MediumItalic.ttf */,
+				747A90212BB8F17400580B2E /* Ubuntu-Regular.ttf */,
+				747A901A2BB8F16C00580B2E /* Merriweather-Black.ttf */,
+				747A90202BB8F16D00580B2E /* Merriweather-BlackItalic.ttf */,
+				747A901F2BB8F16D00580B2E /* Merriweather-Bold.ttf */,
+				747A901E2BB8F16D00580B2E /* Merriweather-BoldItalic.ttf */,
+				747A90192BB8F16B00580B2E /* Merriweather-Italic.ttf */,
+				747A901C2BB8F16C00580B2E /* Merriweather-Light.ttf */,
+				747A901D2BB8F16C00580B2E /* Merriweather-LightItalic.ttf */,
+				747A901B2BB8F16C00580B2E /* Merriweather-Regular.ttf */,
+				747A90182BB8F16300580B2E /* RubikScribble-Regular.ttf */,
+				747A900C2BB8EDE000580B2E /* Roboto-Black.ttf */,
+				747A90172BB8EDE300580B2E /* Roboto-BlackItalic.ttf */,
+				747A90102BB8EDE100580B2E /* Roboto-Bold.ttf */,
+				747A900F2BB8EDE100580B2E /* Roboto-BoldItalic.ttf */,
+				747A90162BB8EDE300580B2E /* Roboto-Italic.ttf */,
+				747A90122BB8EDE200580B2E /* Roboto-Light.ttf */,
+				747A90112BB8EDE200580B2E /* Roboto-LightItalic.ttf */,
+				747A90132BB8EDE200580B2E /* Roboto-Medium.ttf */,
+				747A90152BB8EDE200580B2E /* Roboto-MediumItalic.ttf */,
+				747A900D2BB8EDE100580B2E /* Roboto-Regular.ttf */,
+				747A90142BB8EDE200580B2E /* Roboto-Thin.ttf */,
+				747A900E2BB8EDE100580B2E /* Roboto-ThinItalic.ttf */,
+				74FF5BC12A99579000F459BE /* Jost-Black.ttf */,
+				74FF5BB82A99579000F459BE /* Jost-BlackItalic.ttf */,
+				74FF5BC52A99579000F459BE /* Jost-Bold.ttf */,
+				74FF5BC82A99579100F459BE /* Jost-BoldItalic.ttf */,
+				74FF5BC62A99579000F459BE /* Jost-ExtraBold.ttf */,
+				74FF5BB32A99579000F459BE /* Jost-ExtraBoldItalic.ttf */,
+				74FF5BC72A99579100F459BE /* Jost-ExtraLight.ttf */,
+				74FF5BB72A99579000F459BE /* Jost-ExtraLightItalic.ttf */,
+				74FF5BBA2A99579000F459BE /* Jost-Italic.ttf */,
+				74FF5BB12A99578F00F459BE /* Jost-Light.ttf */,
+				74FF5BB02A99578F00F459BE /* Jost-LightItalic.ttf */,
+				74FF5BB22A99578F00F459BE /* Jost-Medium.ttf */,
+				74FF5BBC2A99579000F459BE /* Jost-MediumItalic.ttf */,
+				74FF5BCB2A99579100F459BE /* Jost-Regular.ttf */,
+				74FF5BC32A99579000F459BE /* Jost-SemiBold.ttf */,
+				74FF5BB92A99579000F459BE /* Jost-SemiBoldItalic.ttf */,
+				74FF5BAF2A99578F00F459BE /* Jost-Thin.ttf */,
+				74FF5BCA2A99579100F459BE /* Jost-ThinItalic.ttf */,
+				74FF5BAD2A99578F00F459BE /* Nunito-Black.ttf */,
+				74FF5BBD2A99579000F459BE /* Nunito-BlackItalic.ttf */,
+				74FF5BBB2A99579000F459BE /* Nunito-Bold.ttf */,
+				74FF5BBF2A99579000F459BE /* Nunito-BoldItalic.ttf */,
+				74FF5BC42A99579000F459BE /* Nunito-ExtraBold.ttf */,
+				74FF5BAE2A99578F00F459BE /* Nunito-ExtraBoldItalic.ttf */,
+				74FF5BCC2A99579100F459BE /* Nunito-ExtraLight.ttf */,
+				74FF5BAB2A99578F00F459BE /* Nunito-ExtraLightItalic.ttf */,
+				74FF5BB52A99579000F459BE /* Nunito-Italic.ttf */,
+				74FF5BB42A99579000F459BE /* Nunito-Light.ttf */,
+				74FF5BBE2A99579000F459BE /* Nunito-LightItalic.ttf */,
+				74FF5BC92A99579100F459BE /* Nunito-Medium.ttf */,
+				74FF5BAC2A99578F00F459BE /* Nunito-MediumItalic.ttf */,
+				74FF5BB62A99579000F459BE /* Nunito-Regular.ttf */,
+				74FF5BC02A99579000F459BE /* Nunito-SemiBold.ttf */,
+				74FF5BC22A99579000F459BE /* Nunito-SemiBoldItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		74FF5BEF2A9957E900F459BE /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5BF02A99580500F459BE /* OnboardingView.swift */,
+				747A900A2BB4D10000580B2E /* OnboardingViewModel.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		74FF5BF22A99581F00F459BE /* ClockScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5BFC2A9963BB00F459BE /* ClockView.swift */,
+				2B4D311A2A9A8A050013D8B2 /* ClockModel.swift */,
+				747A90082BB4C3D300580B2E /* ClockViewModel.swift */,
+			);
+			path = ClockScreen;
+			sourceTree = "<group>";
+		};
+		74FF5BF32A99583C00F459BE /* MainScreen */ = {
+			isa = PBXGroup;
+			children = (
+				74FF5B982A9953B700F459BE /* TabBarView.swift */,
+				74FF5BF62A99586E00F459BE /* MainView.swift */,
+				747A90042BB4BAF400580B2E /* DIContainer.swift */,
+				747A90062BB4BE6D00580B2E /* TabBarViewModel.swift */,
+				74C4B3DA2BB9837F00CF715B /* ThemeManager.swift */,
+			);
+			path = MainScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		74FF5B812A9952B800F459BE /* ClockSnd */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74FF5B912A9952B900F459BE /* Build configuration list for PBXNativeTarget "ClockSnd" */;
+			buildPhases = (
+				74FF5B7E2A9952B800F459BE /* Sources */,
+				74FF5B7F2A9952B800F459BE /* Frameworks */,
+				74FF5B802A9952B800F459BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClockSnd;
+			packageProductDependencies = (
+				7467BC1D2B147334001F4878 /* Realm */,
+				7467BC1F2B147334001F4878 /* RealmSwift */,
+			);
+			productName = ClockSnd;
+			productReference = 74FF5B822A9952B800F459BE /* ClockSnd.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		74FF5B7A2A9952B800F459BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					74FF5B812A9952B800F459BE = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 74FF5B7D2A9952B800F459BE /* Build configuration list for PBXProject "ClockSnd" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 74FF5B792A9952B800F459BE;
+			packageReferences = (
+				7467BC1C2B147334001F4878 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
+			productRefGroup = 74FF5B832A9952B800F459BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				74FF5B812A9952B800F459BE /* ClockSnd */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74FF5B802A9952B800F459BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C4B3412BB8FA7800CF715B /* ZillaSlab-SemiBoldItalic.ttf in Resources */,
+				74C4B3A72BB8FA7800CF715B /* WorkSans-Regular.ttf in Resources */,
+				74C4B3692BB8FA7800CF715B /* Nunito-ExtraLightItalic.ttf in Resources */,
+				74C4B3792BB8FA7800CF715B /* Roboto-LightItalic.ttf in Resources */,
+				74C4B3A42BB8FA7800CF715B /* Ubuntu-Italic.ttf in Resources */,
+				74C4B3752BB8FA7800CF715B /* Nunito-Light.ttf in Resources */,
+				74C4B3B82BB8FA7800CF715B /* ZillaSlab-LightItalic.ttf in Resources */,
+				74C4B3B52BB8FA7800CF715B /* Ubuntu-Regular.ttf in Resources */,
+				74C4B37B2BB8FA7800CF715B /* Merriweather-BoldItalic.ttf in Resources */,
+				74C4B3AA2BB8FA7800CF715B /* Bitter-SemiBold.ttf in Resources */,
+				74C4B3432BB8FA7800CF715B /* Roboto-Regular.ttf in Resources */,
+				74C4B38A2BB8FA7800CF715B /* Bitter-Italic.ttf in Resources */,
+				74C4B3A52BB8FA7800CF715B /* WorkSans-ThinItalic.ttf in Resources */,
+				74C4B3B42BB8FA7800CF715B /* Nunito-ExtraBoldItalic.ttf in Resources */,
+				74C4B3912BB8FA7800CF715B /* Bitter-Medium.ttf in Resources */,
+				74C4B3512BB8FA7800CF715B /* Ubuntu-Medium.ttf in Resources */,
+				74C4B3A62BB8FA7800CF715B /* Orbitron-ExtraBold.ttf in Resources */,
+				74C4B36A2BB8FA7800CF715B /* Nunito-Medium.ttf in Resources */,
+				74C4B36F2BB8FA7800CF715B /* ZillaSlab-SemiBold.ttf in Resources */,
+				74C4B3942BB8FA7800CF715B /* Merriweather-Black.ttf in Resources */,
+				74C4B3BB2BB8FA7800CF715B /* Jost-Bold.ttf in Resources */,
+				74C4B37D2BB8FA7800CF715B /* Merriweather-Light.ttf in Resources */,
+				74C4B39E2BB8FA7800CF715B /* Jost-Light.ttf in Resources */,
+				74C4B37E2BB8FA7800CF715B /* WorkSans-ExtraBold.ttf in Resources */,
+				74C4B3B62BB8FA7800CF715B /* Orbitron-Medium.ttf in Resources */,
+				74C4B3B02BB8FA7800CF715B /* Orbitron-SemiBold.ttf in Resources */,
+				74C4B3992BB8FA7800CF715B /* Jost-ExtraBold.ttf in Resources */,
+				74C4B35A2BB8FA7800CF715B /* Jost-Medium.ttf in Resources */,
+				74C4B3892BB8FA7800CF715B /* ZillaSlab-Bold.ttf in Resources */,
+				74C4B34F2BB8FA7800CF715B /* WorkSans-Black.ttf in Resources */,
+				74C4B3492BB8FA7800CF715B /* ConcertOne-Regular.ttf in Resources */,
+				74C4B34B2BB8FA7800CF715B /* Jost-Italic.ttf in Resources */,
+				74C4B3A32BB8FA7800CF715B /* EduNSWACTFoundation-Bold.ttf in Resources */,
+				74C4B3DD2BBAB80D00CF715B /* PrivacyInfo.xcprivacy in Resources */,
+				74C4B36D2BB8FA7800CF715B /* Ubuntu-Light.ttf in Resources */,
+				74C4B3872BB8FA7800CF715B /* Roboto-MediumItalic.ttf in Resources */,
+				74C4B38C2BB8FA7800CF715B /* Workbench-Regular.ttf in Resources */,
+				74C4B3B92BB8FA7800CF715B /* Ubuntu-Bold.ttf in Resources */,
+				74C4B39D2BB8FA7800CF715B /* Ubuntu-LightItalic.ttf in Resources */,
+				74C4B39B2BB8FA7800CF715B /* ZillaSlab-Regular.ttf in Resources */,
+				74C4B3BD2BB8FA7800CF715B /* Nunito-BoldItalic.ttf in Resources */,
+				74C4B3742BB8FA7800CF715B /* Roboto-Black.ttf in Resources */,
+				74C4B38E2BB8FA7800CF715B /* Roboto-BlackItalic.ttf in Resources */,
+				74C4B39F2BB8FA7800CF715B /* Nunito-BlackItalic.ttf in Resources */,
+				74C4B3A92BB8FA7800CF715B /* Jost-MediumItalic.ttf in Resources */,
+				74C4B3A12BB8FA7800CF715B /* Roboto-Bold.ttf in Resources */,
+				74C4B36E2BB8FA7800CF715B /* Bitter-ExtraBoldItalic.ttf in Resources */,
+				74C4B3BF2BB8FA7800CF715B /* Nunito-MediumItalic.ttf in Resources */,
+				74C4B37C2BB8FA7800CF715B /* Roboto-Medium.ttf in Resources */,
+				74C4B3A82BB8FA7800CF715B /* WorkSans-MediumItalic.ttf in Resources */,
+				74C4B3422BB8FA7800CF715B /* Roboto-Italic.ttf in Resources */,
+				74C4B3722BB8FA7800CF715B /* Bitter-LightItalic.ttf in Resources */,
+				74C4B3612BB8FA7800CF715B /* Bitter-BlackItalic.ttf in Resources */,
+				74C4B34A2BB8FA7800CF715B /* Nunito-Regular.ttf in Resources */,
+				74C4B3BA2BB8FA7800CF715B /* Merriweather-LightItalic.ttf in Resources */,
+				74C4B3BC2BB8FA7800CF715B /* Jost-ExtraLightItalic.ttf in Resources */,
+				74C4B3972BB8FA7800CF715B /* WorkSans-ExtraBoldItalic.ttf in Resources */,
+				74C4B38F2BB8FA7800CF715B /* Roboto-Thin.ttf in Resources */,
+				74C4B3632BB8FA7800CF715B /* WorkSans-Italic.ttf in Resources */,
+				74C4B3BE2BB8FA7800CF715B /* Nunito-ExtraBold.ttf in Resources */,
+				74C4B3452BB8FA7800CF715B /* Jost-Thin.ttf in Resources */,
+				74C4B3C02BB8FA7800CF715B /* Nunito-SemiBold.ttf in Resources */,
+				74C4B3402BB8FA7800CF715B /* Bitter-ExtraLight.ttf in Resources */,
+				74C4B36B2BB8FA7800CF715B /* Nunito-Italic.ttf in Resources */,
+				74C4B35B2BB8FA7800CF715B /* Jost-ThinItalic.ttf in Resources */,
+				74C4B3932BB8FA7800CF715B /* Bitter-Bold.ttf in Resources */,
+				74C4B3642BB8FA7800CF715B /* ZillaSlab-BoldItalic.ttf in Resources */,
+				74C4B3802BB8FA7800CF715B /* Acme-Regular.ttf in Resources */,
+				74C4B3962BB8FA7800CF715B /* Nunito-ExtraLight.ttf in Resources */,
+				74C4B3652BB8FA7800CF715B /* WorkSans-BlackItalic.ttf in Resources */,
+				74C4B34D2BB8FA7800CF715B /* Orbitron-Bold.ttf in Resources */,
+				74C4B3442BB8FA7800CF715B /* Roboto-ThinItalic.ttf in Resources */,
+				74C4B3472BB8FA7800CF715B /* Nunito-Black.ttf in Resources */,
+				74C4B3572BB8FA7800CF715B /* EduNSWACTFoundation-Regular.ttf in Resources */,
+				74C4B3602BB8FA7800CF715B /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				74C4B39A2BB8FA7800CF715B /* BebasNeue-Regular.ttf in Resources */,
+				2B576C132A9D586C00C9CCF0 /* GoogleService-Info.plist in Resources */,
+				74C4B3AE2BB8FA7800CF715B /* Jost-BoldItalic.ttf in Resources */,
+				74C4B3AC2BB8FA7800CF715B /* Bitter-BoldItalic.ttf in Resources */,
+				74C4B38B2BB8FA7800CF715B /* Ubuntu-MediumItalic.ttf in Resources */,
+				74C4B3812BB8FA7800CF715B /* Bitter-SemiBoldItalic.ttf in Resources */,
+				74C4B3982BB8FA7800CF715B /* Merriweather-Bold.ttf in Resources */,
+				74C4B3782BB8FA7800CF715B /* Merriweather-BlackItalic.ttf in Resources */,
+				74C4B34E2BB8FA7800CF715B /* ZillaSlab-Medium.ttf in Resources */,
+				74C4B3562BB8FA7800CF715B /* EduNSWACTFoundation-Medium.ttf in Resources */,
+				74C4B3832BB8FA7800CF715B /* WorkSans-LightItalic.ttf in Resources */,
+				74FF5B8E2A9952B900F459BE /* Preview Assets.xcassets in Resources */,
+				74C4B3922BB8FA7800CF715B /* Bitter-Light.ttf in Resources */,
+				74C4B35C2BB8FA7800CF715B /* Jost-Black.ttf in Resources */,
+				74C4B3552BB8FA7800CF715B /* RubikScribble-Regular.ttf in Resources */,
+				74C4B3772BB8FA7800CF715B /* Merriweather-Italic.ttf in Resources */,
+				74C4B3542BB8FA7800CF715B /* Bitter-Black.ttf in Resources */,
+				74C4B37A2BB8FA7800CF715B /* ZillaSlab-Light.ttf in Resources */,
+				74C4B3672BB8FA7800CF715B /* Jost-ExtraBoldItalic.ttf in Resources */,
+				74C4B3682BB8FA7800CF715B /* Bitter-Thin.ttf in Resources */,
+				74C4B3582BB8FA7800CF715B /* Bitter-ExtraBold.ttf in Resources */,
+				74C4B3B12BB8FA7800CF715B /* AbrilFatface-Regular.ttf in Resources */,
+				74C4B3592BB8FA7800CF715B /* EduNSWACTFoundation-SemiBold.ttf in Resources */,
+				74C4B3462BB8FA7800CF715B /* Roboto-BoldItalic.ttf in Resources */,
+				74C4B3902BB8FA7800CF715B /* Bitter-ThinItalic.ttf in Resources */,
+				74C4B36C2BB8FA7800CF715B /* Nunito-SemiBoldItalic.ttf in Resources */,
+				74C4B3622BB8FA7800CF715B /* Merriweather-Regular.ttf in Resources */,
+				74C4B3732BB8FA7800CF715B /* Jost-LightItalic.ttf in Resources */,
+				74C4B3B22BB8FA7800CF715B /* Roboto-Light.ttf in Resources */,
+				74C4B3842BB8FA7800CF715B /* Nunito-LightItalic.ttf in Resources */,
+				74C4B3522BB8FA7800CF715B /* Jost-SemiBold.ttf in Resources */,
+				74C4B38D2BB8FA7800CF715B /* WorkSans-Bold.ttf in Resources */,
+				74C4B3952BB8FA7800CF715B /* Bitter-Regular.ttf in Resources */,
+				74C4B35D2BB8FA7800CF715B /* WorkSans-Thin.ttf in Resources */,
+				74C4B3532BB8FA7800CF715B /* Nunito-Bold.ttf in Resources */,
+				74C4B35E2BB8FA7800CF715B /* Jost-SemiBoldItalic.ttf in Resources */,
+				74C4B37F2BB8FA7800CF715B /* WorkSans-SemiBold.ttf in Resources */,
+				74C4B3502BB8FA7800CF715B /* Ubuntu-BoldItalic.ttf in Resources */,
+				74C4B3662BB8FA7800CF715B /* WorkSans-SemiBoldItalic.ttf in Resources */,
+				74C4B3B32BB8FA7800CF715B /* Orbitron-Black.ttf in Resources */,
+				74FF5B8A2A9952B900F459BE /* Assets.xcassets in Resources */,
+				74C4B3822BB8FA7800CF715B /* Bitter-MediumItalic.ttf in Resources */,
+				74C4B3AB2BB8FA7800CF715B /* Jost-BlackItalic.ttf in Resources */,
+				74C4B3AD2BB8FA7800CF715B /* Jost-ExtraLight.ttf in Resources */,
+				74C4B3862BB8FA7800CF715B /* Orbitron-Regular.ttf in Resources */,
+				74C4B3482BB8FA7800CF715B /* Jost-Regular.ttf in Resources */,
+				74C4B35F2BB8FA7800CF715B /* WorkSans-Medium.ttf in Resources */,
+				74C4B3882BB8FA7800CF715B /* Bitter-ExtraLightItalic.ttf in Resources */,
+				74C4B3852BB8FA7800CF715B /* ZillaSlab-MediumItalic.ttf in Resources */,
+				74C4B34C2BB8FA7800CF715B /* Abel-Regular.ttf in Resources */,
+				74C4B3712BB8FA7800CF715B /* ZillaSlab-Italic.ttf in Resources */,
+				74C4B3A22BB8FA7800CF715B /* WorkSans-ExtraLight.ttf in Resources */,
+				74C4B3AF2BB8FA7800CF715B /* WorkSans-BoldItalic.ttf in Resources */,
+				74C4B3A02BB8FA7800CF715B /* WorkSans-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		74FF5B7E2A9952B800F459BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C4B3C32BB9185F00CF715B /* AccelerometerManager.swift in Sources */,
+				747A90072BB4BE6D00580B2E /* TabBarViewModel.swift in Sources */,
+				747A8FFE2BB4A58500580B2E /* NavigationCoordinator.swift in Sources */,
+				2B4D312F2A9B7AB80013D8B2 /* ClockCreatorViewModel.swift in Sources */,
+				74FF5B9B2A99543900F459BE /* HomeView.swift in Sources */,
+				74C4B3C72BB9465800CF715B /* AboutViewModel.swift in Sources */,
+				74C4B3C92BB94B4800CF715B /* AppSettingsView.swift in Sources */,
+				74C4B3D72BB961CF00CF715B /* SndComboBoxViewModel.swift in Sources */,
+				747A90012BB4A69A00580B2E /* MainFlowView.swift in Sources */,
+				748BF4782B168B4100BD6B10 /* KeyChainData.swift in Sources */,
+				74C4B3D12BB952A700CF715B /* DisableModifier.swift in Sources */,
+				74FF5BF72A99586E00F459BE /* MainView.swift in Sources */,
+				74FF5B992A9953B700F459BE /* TabBarView.swift in Sources */,
+				74BF67402AA4C6B2001D4FB5 /* SndTextField.swift in Sources */,
+				74FF5BFD2A9963BB00F459BE /* ClockView.swift in Sources */,
+				74C4B3DB2BB9837F00CF715B /* ThemeManager.swift in Sources */,
+				74FF5BA22A99557000F459BE /* Font+Extensions.swift in Sources */,
+				74FF5B9F2A99550F00F459BE /* SndText.swift in Sources */,
+				74FF5BFB2A9963AD00F459BE /* SettingsView.swift in Sources */,
+				747A90032BB4A6D100580B2E /* AppCoordinator.swift in Sources */,
+				2B4D31192A9A89BE0013D8B2 /* GlobalClockManager.swift in Sources */,
+				7467BC1B2B13FB58001F4878 /* CoreDataClocks.xcdatamodeld in Sources */,
+				74C4B3CC2BB94B5900CF715B /* AppSettingsViewModel.swift in Sources */,
+				2B4D311F2A9AC2230013D8B2 /* AboutView.swift in Sources */,
+				747A90092BB4C3D300580B2E /* ClockViewModel.swift in Sources */,
+				74FF5B862A9952B800F459BE /* ClockSndApp.swift in Sources */,
+				747A900B2BB4D10000580B2E /* OnboardingViewModel.swift in Sources */,
+				2B4D31262A9B65B80013D8B2 /* ClockCreatorView.swift in Sources */,
+				74C4B3D52BB958DF00CF715B /* SndComboBoxView.swift in Sources */,
+				74FF5BA42A99559E00F459BE /* Color+Extensions.swift in Sources */,
+				2B4D311B2A9A8A060013D8B2 /* ClockModel.swift in Sources */,
+				74FF5BF92A99639700F459BE /* StoreView.swift in Sources */,
+				74C4B3D92BB97CEF00CF715B /* UserDefaults.swift in Sources */,
+				74C4B3D32BB953EC00CF715B /* SndCheckBox.swift in Sources */,
+				74FF5BF12A99580500F459BE /* OnboardingView.swift in Sources */,
+				747A90052BB4BAF400580B2E /* DIContainer.swift in Sources */,
+				7467BC232B154B6E001F4878 /* RealmData.swift in Sources */,
+				747A8FFC2B710FD300580B2E /* HomeIndicatorComponentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		74FF5B8F2A9952B900F459BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		74FF5B902A9952B900F459BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		74FF5B922A9952B900F459BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ClockSnd/ClockSnd.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ClockSnd/Preview Content\"";
+				DEVELOPMENT_TEAM = CKHK6L99A3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockSnd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clock Stand";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndCompanyUA.ClockSnd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		74FF5B932A9952B900F459BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = ClockSnd/ClockSnd.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ClockSnd/Preview Content\"";
+				DEVELOPMENT_TEAM = CKHK6L99A3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ClockSnd/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Clock Stand";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.2;
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.UndCompanyUA.ClockSnd;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		74FF5B7D2A9952B800F459BE /* Build configuration list for PBXProject "ClockSnd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FF5B8F2A9952B900F459BE /* Debug */,
+				74FF5B902A9952B900F459BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74FF5B912A9952B900F459BE /* Build configuration list for PBXNativeTarget "ClockSnd" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74FF5B922A9952B900F459BE /* Debug */,
+				74FF5B932A9952B900F459BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7467BC1C2B147334001F4878 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7467BC1D2B147334001F4878 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7467BC1C2B147334001F4878 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		7467BC1F2B147334001F4878 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7467BC1C2B147334001F4878 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		7467BC192B13FB58001F4878 /* CoreDataClocks.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7467BC1A2B13FB58001F4878 /* CoreDataClocks.xcdatamodel */,
+			);
+			currentVersion = 7467BC1A2B13FB58001F4878 /* CoreDataClocks.xcdatamodel */;
+			path = CoreDataClocks.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 74FF5B7A2A9952B800F459BE /* Project object */;
+}
