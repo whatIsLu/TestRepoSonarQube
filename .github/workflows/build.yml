@@ -30,3 +30,16 @@ jobs:
             -resultBundlePath ./build_result \
             -derivedDataPath . \
             clean build
+      - name: Generate Coverage Report
+        run: |
+          chmod +x xccov-to-sonarqube-generic.sh
+          ./xccov-to-sonarqube-generic.sh test_result.xcresult > coverage.xml
+
+      - name: Install SonarScanner
+        run: brew install sonar-scanner
+
+      - name: Run SonarCloud Analysis
+        run: sonar-scanner
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
